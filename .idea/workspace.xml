@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dedfe3e2-52b9-42dc-96fb-b36e54716a39" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/sass/1024.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/sass/1140.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/sass/640.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/sass/768.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/sass/blocks/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/sass/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/sass/style.sass" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586957414280</updated>
-      <workItem from="1586957416105" duration="4110000" />
+      <workItem from="1586957416105" duration="5777000" />
     </task>
     <servers />
   </component>
