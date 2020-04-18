@@ -135,10 +135,11 @@ gulp.task('export', function(){
 });*/
 
 gulp.task('watch', function() {
-    gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));
+    gulp.watch("src/assets/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));
     /*gulp.watch("src/!*.html").on('change', gulp.parallel('html'));*/
-    gulp.watch("src/js/**/*.js", gulp.parallel("code"));
-    gulp.watch(['src/js/script.js', 'src/libs/**/*.js'], gulp.parallel('scripts'));
+    gulp.watch("src/assets/js/**/*.js", gulp.parallel("code"));
+    gulp.watch(['src/assets/js/script.js', 'src/libs/**/*.js'], gulp.parallel('scripts'));
+    gulp.watch("src/assets/css/normalize.css", gulp.parallel('css'));
     /*Активировать, если есть библиотеки Jquery и т.д.*/
 });
 

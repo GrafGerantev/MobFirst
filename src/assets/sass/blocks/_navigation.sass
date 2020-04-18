@@ -1,0 +1,26 @@
+.nav
+  &-btn
+    display: block
+    width: 40px
+    height: 40px
+    background-color: #ffffff
+    border-radius: 3px
+    span
+      font-size: 0
+      width: 12px
+      height: 2px
+      display: block
+      background-color: $accent
+      margin: 0 auto
+      position: relative
+      &:after, &:before
+        content: ""
+        position: absolute
+        display: block
+        width: 12px
+        height: 2px
+        background-color: $accent
+      &:after
+        bottom: 4px
+      &:before
+        top: 4px

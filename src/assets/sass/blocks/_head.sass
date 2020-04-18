@@ -1,0 +1,94 @@
+.head
+  background: url("../img/bg/head-bg.jpg") center (center / cover) no-repeat
+  &__inner
+    min-height: 193px
+    position: relative
+    background: rgba(33, 33, 33, 0.5)
+  &-slider
+    height: 100%
+    &__item
+      min-height: 193px
+      text-align: center
+      color: #ffffff
+    &__title
+      position: relative
+      padding: 36px 0 28px
+      @include condens-400
+      font-size: 28px
+      line-height: 28px
+      max-width: 209px
+      margin: 0 auto 30px
+      height: 100%
+      text-transform: uppercase
+      text-align: center
+      &:after
+        content: ""
+        position: absolute
+        display: block
+        width: 61px
+        height: 8px
+        background: #4A4A4A
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+    &__subtitle
+      @include condens-400
+      font-size: 18px
+      line-height: 20px
+      color: #ffffff
+      max-width: 592px
+      text-align: center
+      margin: 0 auto
+      display: none
+  &-btn
+    padding: 16px 45px
+    background-color: $accent
+    border-radius: 3px
+    text-transform: uppercase
+    color: $bg-color
+    margin: 0 auto 113px
+
+  .slick-dots
+    display: flex
+    justify-content: center
+    bottom: 20px
+    left: 0
+    right: 0
+    li
+      width: 0
+      height: 0
+      margin: 0 10px !important
+
+
+    .slick-active
+      button
+        background: transparent
+        border: 1px solid #476E4D
+    button
+      background-color: $accent
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      font-size: 0
+      border: none
+      padding: 0
+      display: block
+
+  .slick-slider
+    margin-bottom: 0
+  .slick-arrow
+    width: 56px
+    height: 56px
+    position: absolute
+    right: 0
+    z-index: 5
+    &:before, &:after
+      content: ""
+  .slick-prev
+    background-color: $accent
+    left: 100%
+    top: calc(50% - 56px)
+    transform: translate(-100%, -50%)
+  .slick-next
+    background-color: $bg-color
+    top: 50%
