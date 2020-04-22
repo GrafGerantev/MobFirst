@@ -1,0 +1,74 @@
+.projects
+  padding-top: 20px
+  background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%)
+  &__inner
+    padding-top: 11px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    flex-direction: column
+  &-item
+    max-width: 280px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-bottom: 16px
+    position: relative
+    &:hover
+      .projects-item__mask
+        opacity: 1
+    &__img
+      display: block
+      width: 100%
+      height: auto
+      margin-bottom: 20px
+      position: relative
+      z-index: 2
+      object-fit: cover
+      //&:before
+        content: ""
+        position: absolute
+        width: 243px
+        height: 243px
+        display: block
+        background: red
+        top: 0
+        left: 0
+        z-index: 1000
+    &__title
+      @include condens-700
+      font-size: 16px
+      line-height: 19px
+      letter-spacing: 2px
+      text-align: center
+      color: $accent
+    &__mask
+      opacity: 0
+      width: 254px
+      height: 227px
+      background: rgba($bg-color, .8)
+      position: absolute
+      top: 44%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: 3
+      border-radius: 4px
+      display: flex
+      justify-content: center
+      align-items: center
+      transition: all .2s linear
+
+  &-info, &-search
+    display: block
+    width: 31px
+    height: 30px
+
+  &-info
+    margin-right: 16px
+    background: url("../img/icons/info.png") center (center / cover ) no-repeat
+  &-search
+    background: url("../img/icons/search.png") center (center / cover ) no-repeat
+
+

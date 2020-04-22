@@ -1,7 +1,8 @@
 @media (min-width: 768px)
   .container
-    max-width: 1200px
+    max-width: 1210px
     margin: 0 auto
+    padding: 0 10px
   .head
     &-slider
       &__item
@@ -34,3 +35,38 @@
       &__item
         width: 50%
         min-height: 336px
+
+  .projects
+    padding-top: 80px
+    &__inner
+      max-width: 662px
+      flex-direction: row
+      justify-content: space-between
+      margin: 0 auto
+    &-item
+      max-width: 317px
+      &__mask
+        width: 287px
+        height: 256px
+
+  .team
+    padding: 39px 0 48px
+    .title
+      text-align: left
+      &:after
+        left: 52px
+    &__inner
+      display: flex
+      justify-content: space-between
+    &__img
+      max-width: 240px
+    &__text
+      max-width: 407px
+      font-size: 18px
+      text-align: left
+    &-btn
+      font-size: 18px
+      padding: 21px 35px
+      margin-top: 34px
+      margin-left: 0
+      transform: translateX(-50%)
